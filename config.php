@@ -18,10 +18,10 @@ $config = array(
 	// -------------------------------------------------------------------
 	// Footer contact info
 	// -------------------------------------------------------------------
-	'email' => 'email@somedomain.com',
-	'phone' => '+1 (555) 123-4567',
+	'email' => 'aa3e2523@opayq.com',
+	'phone' => '',
 	// Twitter handle - just your username, no "@" symbol before it
-	'twitter_handle' => 'USERNAME',
+	'twitter_handle' => '',
 	// -------------------------------------------------------------------
 	// Email/SMTP settings
 	// -------------------------------------------------------------------
@@ -32,15 +32,15 @@ $config = array(
 	// -------------------------------------------------------------------
 	// reCAPTCHA spam protection
 	// -------------------------------------------------------------------
-	'enable_recaptcha' => false,
+	'enable_recaptcha' => true,
 	// Obtain keys from https://www.google.com/recaptcha
-	'recaptcha_public_key' => '',
-	'recaptcha_private_key' => '',
+	'recaptcha_public_key' => '6LeRhw0TAAAAAHAfNSpjwtks6WM1aXQgzcrv9WV2',
+	'recaptcha_private_key' => '6LeRhw0TAAAAAFs88IxAJuBPpL7u3eFciTP2qG8',
 	// -------------------------------------------------------------------
 	// Background options
 	// -------------------------------------------------------------------
 	// Image options include mountains, city-lights, and tabletop
-	'image' => 'mountains',
+	'image' => 'tabletop',
 	// Tint colour to apply on top of the image -- use hexadecimal format
 	// #FFFFFF would add a white tint. Try out http://www.colorpicker.com/
 	'tint' => '#322F48',
@@ -49,11 +49,11 @@ $config = array(
 	// -------------------------------------------------------------------
 	// Editor settings
 	// -------------------------------------------------------------------
-	'editor_login_email' => '',
+	'editor_login_email' => 'tom@tomfrazier.com',
 	'editor_auth_methods' => array(
 		'Google' => array(
-			'client_id' => '',
-			'client_secret' => ''
+			'client_id' => '50036880659-cd4cdfhaq6bspsfnrjtgf23gppp7t69o.apps.googleusercontent.com',
+			'client_secret' => 'rTdKyg_qo6qNZmVe-wO_L1_F'
 		),
 
 		'Live' => array(
@@ -79,11 +79,6 @@ $config = array(
 //
 // Format (repeat for each domain): 
 //
-// 'domain name here' => array(
-//	   'nicename' => 'ReplacesDomainNameText' // optional
-// 	   'price' => 'price here',
-// 	   'description' => 'description here',
-// ),
 //
 // Notes:
 // * If you don't want a price or description, erase the contents
@@ -91,17 +86,17 @@ $config = array(
 // * If the price is blank, the tag will not show
 // * Enter domain names *without* the "http://" in front
 $domains = array(
-	'mydomain.com' => array(
-		'price' => '$750',
-		'description' => 'short description of domain, visits, ranking, age, useful stats' 
+	'daraprim.sucks' => array(
+		'price' => '$99000',
+		'description' => 'Free speech about Daraprim from Turing Pharma' 
 	), 
-	'domaintwo.com' => array(
-		'price' => '',
-		'description' => '' 
+	'acthar.sucks' => array(
+		'price' => '$49000',
+		'description' => 'Free speech about Acthar from Mallinckrodt Pharmaceuticals' 
 	), 
-	'domainthree.com' => array(
-		'price' => '',
-		'description' => '' 
+	'jazzpharma.sucks' => array(
+		'price' => '$59000',
+		'description' => 'Free speech about Jazz Pharma' 
 	), 
 	
 );
