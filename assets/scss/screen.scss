@@ -1,0 +1,15 @@
+// Main Stylesheet
+
+$primary: #C05862;
+$secondary: #322F48;
+$tertiary: #12192B;
+
+@import 'compass/css3';
+@import 'mixins';
+@import 'linecons';
+@import 'animate';
+@import 'preloader';
+@import 'reset';
+@import 'main';
+@import 'editor';
+@import 'mediaqueries';

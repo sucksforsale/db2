@@ -1,0 +1,29 @@
+body {
+	margin: 0 10%;
+	padding: 30px;
+	font-family: "Arial", sans-serif;
+	text-align: center;
+}
+
+.antispam {
+	display: none;
+}
+
+label {
+	display: block;
+	margin: .5em 0;
+}
+
+.error {
+	color: red;
+}
+
+.form-error,
+.form-success {
+	padding: 1em;
+	background: rgb(255, 249, 219);
+}
+
+.form-success {
+	background: rgb(179, 237, 179);
+}

@@ -1,0 +1,301 @@
+// Editor styles
+
+.auth-info {
+	position: absolute;
+	top: .5em;
+	right: 1em;
+}
+
+.settings {
+	position: absolute;
+	z-index: 5;
+	top: -400px;
+	left: 0;
+	right: 0;
+	height: 400px;
+	letter-spacing: .5px;
+	text-align: left;
+	background: rgba(darken($secondary, 5%), .95);
+	box-shadow: 0 .25em .3em rgba($tertiary, .37);
+	transition: top .5s ease-out;
+	p {
+		margin: .63em 0;
+	}
+	.field-wrapper {
+		margin-bottom: .36em;
+		width: 33%;
+		&.long {
+			width: 100%;
+		}
+	}
+	.field-wrapper label {
+		position: relative;
+		font-family: "Open Sans", sans-serif;
+		font-style: italic;
+		font-weight: bold;
+		font-size: 18px;
+		letter-spacing: .25px;
+	}
+	.text-field,
+	.email-field,
+	.textarea-field {
+		background: rgba(#F2F2F2, .83);
+		letter-spacing: 1px;
+	}
+}
+.settings-open .settings {
+	top: 0 !important;
+}
+.settings-btn-wrap {
+	position: absolute;
+	z-index: 10;
+	top: 100%;
+	left: 0;
+	letter-spacing: -0.18em; // remove inline-block spacing
+}
+.editor-btn {
+	display: inline-block;
+	border: none;
+	padding: .63em 1.3em;
+	background: rgba(darken($tertiary, 5%), .63);
+	box-shadow: 0 .25em .3em rgba($tertiary, .37);
+	transition: background .25s ease-out;
+	letter-spacing: normal;
+	&:hover {
+		background: $secondary;
+	}
+}
+.save-btn {
+	overflow: hidden;
+	background: rgba(darken($primary, 5%), .63);
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	transition: all .25s ease-out;
+	&:hover {
+		background: $primary;
+	}
+	span {
+		cursor: pointer;
+	}
+	.bubblingG {
+		top: 5%;
+	    right: 0;
+	}
+	.error {
+		font-family: "Open Sans Condensed", sans-serif;
+		font-weight: 300;
+		font-style: normal;
+		ul {
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			li {
+				display: inline-block;
+				margin: 0 0 0 1em;
+				padding: 0 0 0 1em;
+				border-left: solid 1px rgba(255,255,255,.67);
+			}
+		}
+	}
+}
+.tab-nav {
+	list-style: none;
+	margin: 1.5em;
+	padding: 0;
+	float: left;
+	width: 250px;
+	height: 350px;
+	font-size: 24px;
+	li {
+		display: block;
+		padding: .35em 1em;
+		color: #D9D9D9;
+		text-decoration: none;
+		border-bottom: solid 1px lighten($secondary, 20%);
+		transition: all .25s ease-out;
+		&:hover {
+			cursor: pointer;
+			span {
+				color: rgba(white, .63);
+			}
+		}
+		&.active {
+			border-bottom: solid 1px rgba(white, .5);
+			background: lighten($secondary, 5%);
+			span {
+				color: rgba(white, .63);
+			}
+		}
+	}
+	span {
+		position: relative;
+		top: -2px;
+		color: lighten($secondary, 30%);
+		transition: color .25s ease-out;
+	}
+}
+.tab-content {
+	list-style: none;
+	margin: 0 0 0 322px;
+	padding: 1em 2em 1em 0;
+	li {
+		display: none;
+		&.active {
+			display: block;
+		}
+	}
+}
+.fields-column {
+	float: left;
+	width: 50%;
+	padding-right: 2em;
+	&:last-child {
+		padding-right: 0;
+	}
+	.field-wrapper {
+		width: 100%;
+	}
+}
+.fields-column-70 {
+	width: 70%;
+}
+.fields-column-30 {
+	width: 30%;
+}
+
+// Style Toggle switch http://www.sitepoint.com/css3-toggle-switch/
+.checkbox-field:empty {
+	margin-left: -999px;
+}
+.checkbox-field:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 1.7;
+	text-indent: 4.5em;
+	margin: 0.2em 0;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.checkbox-field:empty ~ label:before, 
+.checkbox-field:empty ~ label:after {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+	width: 3.6em;
+	background-color: #c33;
+	border-radius: 0.3em;
+	transition: all 100ms ease-in;
+	box-shadow: inset 0 0.1em 0.2em rgba(0, 0, 0, 0.33);
+}
+.checkbox-field:empty ~ label:after {
+	content: 'OFF';
+	width: 2.6em;
+	top: 0.2em;
+	bottom: 0.2em;
+	line-height: 2;
+	font-size: 13px;
+	font-style: normal;
+	font-family: sans-serif;
+	letter-spacing: .5px;
+	padding: 0;
+	text-align: center;
+	margin-left: 0.2em;
+	background-color: #fff;
+	border-radius: 3px;
+	box-shadow: inset 0 -0.03em 0.2em rgba(0, 0, 0, 0.11);
+}
+.checkbox-field:checked ~ label:before {
+	background-color: #393;
+}
+
+.checkbox-field:checked ~ label:after {
+	margin-left: 2.1em;
+	content: 'ON';
+}
+
+// Image selector using radio inputs
+// http://stackoverflow.com/a/17541916/1178501
+label > .radio-input{
+	display: none;
+}
+label > .radio-input + .thumb-wrapper{ 
+	overflow: hidden;
+	display: inline-block;
+	border: 2px solid rgba(white, .33);
+	width: 100px;
+	height: 100px;
+	text-indent: 0;
+	img {
+		cursor: pointer;
+	}
+	&.scale img {
+		height: 100%;
+		width: auto;
+	}
+}
+label > .radio-input:checked + .thumb-wrapper{ 
+	border: 2px solid rgba(white, .63);
+}
+label > .radio-input:checked + .thumb-wrapper:after {
+	font-family: sans-serif;
+	content: '\2713';
+	position: absolute;
+	font-style: normal;
+	font-weight: normal;
+	bottom: 1em;
+	right: 1em;
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	color: $tertiary;
+	border-radius: 50%;
+	background: rgba(white, .63);
+}
+// Domain Porfolio Section
+#domain_portfolio {
+	overflow: auto;
+	height: 356px;
+	padding-bottom: 10px;
+}
+.domain-portfolio-table {
+	border-collapse: collapse;
+	th {
+		font-family: "Open Sans", sans-serif;
+	    font-style: italic;
+	    font-weight: bold;
+	    font-size: 18px;
+	}
+	td, th {
+		padding: 2px 1px;
+		&:nth-child(1n) {
+			width: 30%;
+		}
+		&:nth-child(2n) {
+			width: 10%;
+		}
+		&:nth-child(3n) {
+			width: 70%;
+		}
+		&:nth-child(4n) {
+			width: 35px;
+		}
+
+	}
+	.text-field {
+		padding: .2em .4em;
+	}
+}
+.small-btn {
+	padding: .2em .63em;
+}
+.add-domain-btn {
+	margin-top: 2px;
+	width: 100%;
+}

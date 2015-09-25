@@ -1,0 +1,165 @@
+@media (max-width: 1440px) {
+	body {
+		font-size: 21px;
+	}
+
+	/* Header */
+	.header {
+		width: 55%;
+		.subtitle {
+			margin-right: .25em;
+		}
+		.price-tag {
+			width: 134px;
+			padding: .9em;
+		    padding-left: 2.0em;
+		}
+		.caption {
+			top: -3px;
+			left: 3px;
+			font-size: 14px;
+		}
+		.price {
+			font-size: 24px;
+		}
+	}
+	.header-inner {
+		  margin-left: 0;
+	}
+
+	/* Main */
+	.main {
+		width: 45%;
+	}
+	.offer-form {
+		width: 400px;
+		margin: 0;
+		.title {
+			font-size: 30px;
+		}
+	}
+	.send-btn {
+		font-size: 24px;
+	}
+	.field-wrapper label:after {
+		font-size: 24px;
+	}
+
+	/* Footer */
+	.footer {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 960px) {
+	html, body {
+		height: auto;
+	}
+	.header,
+	.header-inner,
+	.main,
+	.main-inner,
+	.footer {
+		position: relative;
+		top: inherit;
+		left: inherit;
+		right: inherit;
+		bottom: inherit;
+		width: 100%;
+	}
+
+	/* Header */
+	.header {
+		z-index: 1;
+		padding: 3.8em 0 1.25em;
+		.title {
+			margin-bottom: .1em;
+		}
+		.subtitle {
+			vertical-align: baseline;
+			margin-right: 7px;
+		    font-size: 24px;
+		}
+	}
+
+	/* Main */
+	.main {
+		padding: 0 0 1.5em;
+		.title {
+			font-size: 24px;
+		}
+	}
+	.offer-form {
+		margin: 0 auto;
+	}
+
+	/* Footer */
+	.footer {
+		.title {
+			display: block;
+			margin: .63em 0 .11em;
+		}
+	}
+}
+
+@media (max-width: 480px) {
+	body {
+		background: #F2F2F2 !important;
+		&:after {
+			display: none;
+		}
+	}
+
+	/* Header */
+	.header {
+		box-shadow: 0 .15em .3em rgba($tertiary, .37);
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		&:after {
+			content: '';
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+		}
+		.title {
+			margin-bottom: .25em;
+		}
+	}
+
+	/* Main */
+	.main,
+	.main-inner {
+		padding: 0;
+	}
+	.offer-form {
+		width: auto;
+		box-shadow: 0 .1em .15em rgba($tertiary, .37);
+	}
+
+	/* Footer */
+	.footer {
+		background: none;
+		padding-bottom: 1em;
+		.title {
+			margin: .7em 0 .4em
+		}
+		a {
+			display: block;
+			padding: 9px;
+			color: #4F4F4F;
+			&:hover {
+				color: $primary;
+				background: none;
+			}
+		}
+	}
+
+	/* Domain Portfolio */
+	.domains li {
+		display: block;
+	}
+}
