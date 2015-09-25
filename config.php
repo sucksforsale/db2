@@ -53,7 +53,7 @@ $config = array(
 	'editor_auth_methods' => array(
 		'Google' => array(
 			'client_id' => '50036880659-cd4cdfhaq6bspsfnrjtgf23gppp7t69o.apps.googleusercontent.com',
-			'client_secret' => 'rTdKyg_qo6qNZmVe-wO_L1_F'
+			'client_secret' => 'YTwXxJedkbtF4V9TYrj00MP3'
 		),
 
 		'Live' => array(
