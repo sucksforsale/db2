@@ -52,8 +52,8 @@ $config = array(
 	'editor_login_email' => 'tom@tomfrazier.com',
 	'editor_auth_methods' => array(
 		'Google' => array(
-			'client_id' => '50036880659-cd4cdfhaq6bspsfnrjtgf23gppp7t69o.apps.googleusercontent.com',
-			'client_secret' => 'YTwXxJedkbtF4V9TYrj00MP3'
+			'client_id' => '171401384406-caivtokn65af8ovgnhgpc6kfv7vumgts.apps.googleusercontent.com',
+			'client_secret' => 'J8-5WpanBGemfulL-W-5By9s'
 		),
 
 		'Live' => array(
